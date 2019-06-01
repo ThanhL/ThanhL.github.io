@@ -35,7 +35,10 @@
 							<h1 class="major">Autonomous Drone</h1>
 							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
 							<p>A long time passion project of mine, I started this project with the intention of autonomous search and rescue applications. Initial stages consisted of thorough research of autonomous mobile robotics, learning algorithms such as SLAM, particle filters, etc. The dynamics of quadrotors were heavily researched as well. </p>
-							<p>The initial build of the drone c.</p>
+							<p>The initial build of the drone was designed and built from scratch using an Arduino with various sensors such as GPS, IMU, barometer and magnetometer. The sensors were fused together with a Kalman Filter, and the stabilizing controller was programmed onto the Arduino. A power system was designed to deliver enough power to the motors and safe voltages to the microcontroller. An anti-vibrational mount for the fight controller was designed to counteract the natural vibrations caused by the motors and secured on the drone frame.</p>
+							<p> In the second iteration of the drone, the flight controller was upgraded with a Navio+ board so that it can be easily interfaced with ROS. In addition, better sensors such as cameras can be incorporated easily into the system. The project is still a work in progress, with plans of a redesign to the system to incorporate an Nvidia Jetson as a companion computer to incorporate fast onboard computations and deep learning/reinforcement learning algorithms.
+
+							</p>
 						</div>
 					</section>
 
