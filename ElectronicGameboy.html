@@ -6,6 +6,27 @@
 -->
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			box-sizing: border-box;
+			}
+
+			.col-container {
+				display: table; /* Make the container element behave like a table */
+				width: 100%; /* Set full-width to expand the whole page */
+			}
+
+			.col {
+				display: table-cell; /* Make elements inside the container behave like table cells */
+				padding: 0;
+				vertical-align:top; 
+			}
+
+
+
+		</style>
+
 		<title>Electronic Gameboy</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -33,9 +54,46 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Electronic Gameboy</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+
+							<span class="image fit">
+								<div class="">
+									<img src="images/ElectronicGameboy/board3d_top.PNG"  />
+								</div>
+
+								<div class="col-container">
+									<div class="col">
+										<img src="images/ElectronicGameboy/PCB_track_bot.PNG"  />
+									</div>
+									<div class="col">
+										<img src="images/ElectronicGameboy/PCB_track_top.PNG" />
+									</div>
+								</div>
+
+
+							</span>
+
 							<p>The Electric Gameboy was part of my Masters course in which students design and build a programmable embedded device that can play simple games. Each student was given a kit of starting materials consisting of electrical components such as resisitors, capacitors, diodes, etc.</p>
-							<p>An PCB was designed in Altium Designer and fabricated from the ground up. The electronic components were then soldered on and incrementally tested. Once everything was assembled, through AVR programming, a simple game was coded up in C.</p>
+
+							<span class="image fit">
+								<div class="col-container">
+									<div class="col">
+										<img src="images/ElectronicGameboy/PCB_track_real_1.jpg"  />
+									</div>
+									<div class="col">
+										<img src="images/ElectronicGameboy/PCB_track_real_2.jpg" />
+									</div>
+								</div>
+							</span>
+
+
+							<p>A PCB was designed in Altium Designer and fabricated from the ground up. The electronic components were then soldered on and incrementally tested. Once everything was assembled, through AVR programming, a simple game was coded up in C.</p>
+
+							<span class="image fit">
+							<img src="images/ElectronicGameboy/GameboyBack.jpg" alt="" />
+							<img src="images/ElectronicGameboy/GameboyFront.jpg" alt="" />
+							</span>
+
+
 						</div>
 					</section>
 
