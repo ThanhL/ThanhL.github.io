@@ -6,6 +6,48 @@
 -->
 <html>
 	<head>
+		<style>
+			* {
+			box-sizing: border-box;
+			}
+
+
+			.column {
+			float: left;
+			width:33.33%;
+			padding: 5px;
+			display: table-cell;
+			}
+
+
+
+			/* Clearfix (clear floats) */
+			.row::after {
+			content: "";
+			clear: both;
+			display: table;
+			width: 100%;
+			}
+
+			.col-container {
+				display: table; /* Make the container element behave like a table */
+				width: 100%; /* Set full-width to expand the whole page */
+			}
+
+			.col {
+				display: table-cell; /* Make elements inside the container behave like table cells */
+			}
+
+
+			/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+			@media screen and (max-width: 500px) {
+				.column {
+					width: 100%;
+				}
+			}
+
+
+		</style>
 		<title>Self-Balancing Robot</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -33,8 +75,36 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Self-Balancing Robot</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+
+							<span class="image fit">
+								<div class="col-container">
+									<div class="col">
+										<img src="images/SelfBalance/Robot_2.jpg"  />
+									</div>
+									<div class="col">
+										<img src="images/SelfBalance/Robot_1.jpg"  />
+									</div>
+								</div>
+							</span>
+
 							<p>As part of a fun, short personal project, the self-balancing robot was made to play around with control systems on real-life hardware.The parts were designed with CAD software and 3D printed. The control system was then implemented onto an Arduino microcontroller, which were connected to a LiPo battery, a motor driver and a MPU9050 sensor. </p>
+
+							<span class="image fit">
+								<div class="row">
+									<div class="column">
+										<img src="images/SelfBalance/TopPlate.PNG" alt="" style="width:93.7%"/>
+									</div>
+	
+									<div class="column">
+										<img src="images/SelfBalance/design_bot_mnt.PNG" alt="" style="width:93.8%" />
+									</div>
+									<div class="column">
+										<img src="images/SelfBalance/design_top_mnt.PNG" alt="" style="width:100%" />
+									</div>
+								</div>
+							</span>
+
+
 						</div>
 					</section>
 
