@@ -6,6 +6,27 @@
 -->
 <html>
 	<head>
+		<style>
+			* {
+			box-sizing: border-box;
+			}
+
+			.col-container {
+				display: table; /* Make the container element behave like a table */
+				width: 100%; /* Set full-width to expand the whole page */
+			}
+
+			.col {
+				display: table-cell; /* Make elements inside the container behave like table cells */
+				padding: 0;
+				vertical-align:top; 
+			}
+
+
+
+		</style>
+
+
 		<title>Autonomous Forklift Navigation (Master's Thesis)</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -36,23 +57,41 @@
 
 							<span class="image fit">
 								<div class="">
-									<img src="images/AutonForklift/board3d_top.PNG"  />
-								</div>
-
-								<div class="col-container">
-									<div class="col">
-										<img src="images/ElectronicGameboy/PCB_track_bot.PNG"  />
-									</div>
-									<div class="col">
-										<img src="images/ElectronicGameboy/PCB_track_top.PNG" />
-									</div>
+									<img src="images/AutonForklift/Poster.png"  />
 								</div>
 							</span>
 
 
+
+
+
 							<p>The Autonomous Forklift Navigation was my Master's Thesis investigating safe autonomous navigation of a forklift around a structured warehouse environment. As part of the thesis, we explored path planning algorithms that incorporated the dynamics of the forklift while taking into account obstacle avoidance and trajectory tracking control. Many path planning algorithms were explored, but ultimately Hybrid A* integrated with Dubins Path was used as the vehicle dynamics can incorporated easily. Once the trajectories were calculated from Hybrid A*, the trajectories were then followed using PID control.
 							</p>
+
+							<span class="image fit">
+								<div class="col-container">
+									<div class="col">
+										<img src="images/AutonForklift/sim_1.png"  />
+									</div>
+									<div class="col">
+										<img src="images/AutonForklift/sim_4.png" style="width:88.8%"/>
+									</div>
+								</div>
+
+								<img src="images/AutonForklift/SearchSpace_3.png" style="width:94.5%" align="middle"/>
+								<img src="images/AutonForklift/SearchSpace_2.png" style="width:94.5%" align="middle"/>
+							</span>
+
+
 							<p>A simulation demonstrating the autonomous capability was devoloped in Unity. The dynamics of the forklift and the path planning were incorporated into the simulation, which was coded in C#.</p>
+
+							<span class="image fit">
+								<div class="">
+									<img src="images/AutonForklift/sim_3.png"  />
+								</div>
+							</span>
+
+
 						</div>
 					</section>
 
