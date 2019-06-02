@@ -6,6 +6,23 @@
 -->
 <html>
 	<head>
+		<style>
+			* {
+			box-sizing: border-box;
+			}
+
+			.col-container {
+				display: table; /* Make the container element behave like a table */
+				width: 100%; /* Set full-width to expand the whole page */
+			}
+
+			.col {
+				display: table-cell; /* Make elements inside the container behave like table cells */
+				padding: 0;
+				vertical-align:top; 
+			}
+		</style>
+
 		<title>Altitude Estimate device</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -33,8 +50,40 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Altitude Estimate device</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+
 							<p>In order to investigate Kalman Filter algoritms on hardware, a sensor sytem was constructed using an accelerometer, a barometer and an Arduino to estimate the height. Sensor readings were collected and analyzed through MATLAB before the algorithm was implemented on the Arduino. </p>
+
+							<h3>Velocity and Position Results from sensors</h3>
+							<span class="image fit">
+								<div class="col-container">
+									<div class="col">
+										<img src="images/AltEst/VEL_From_PRESS.png"/>
+									</div>
+									<div class="col">
+										<img src="images/AltEst/Vel_From_Acc.png"/>
+									</div>
+								</div>
+
+								<div class="col-container">
+									<div class="col">
+										<img src="images/AltEst/Pos_From_PRESS.png"/>
+									</div>
+									<div class="col">
+										<img src="images/AltEst/Pos_From_ACC.png"/>
+									</div>
+								</div>
+							</span>
+
+							<h3>Kalman Filter Results</h3>
+
+							<div class="col-container">
+								<div class="col">
+									<img src="images/AltEst/KF_pos.png" style="width:100%"/>
+								</div>
+								<div class="col">
+									<img src="images/AltEst/KF_RealTime.png" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 					</section>
 
